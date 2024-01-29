@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp">
+
+        <ImageView
+            android:id="@+id/imgCamera"
+            android:layout_width="800dp"
+            android:layout_height="300dp"
+            android:contentDescription="@string/imgdesc"
+            android:scaleType="centerCrop"
+            android:src="@drawable/xx"/>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/floatingActionButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@id/imgCamera"
+            android:layout_alignBottom="@id/imgCamera"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:clickable="true"
+            android:contentDescription="@string/app_name"
+            android:focusable="true"
+            android:src="@drawable/ic_photo_camera_black_48dp"
+            tools:ignore="DuplicateClickableBoundsCheck" />
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile_image"
+            android:layout_width="164dp"
+            android:layout_height="132dp"
+            android:layout_alignEnd="@+id/floatingActionButton"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="94dp"
+            android:layout_marginBottom="0dp"
+            android:src="@drawable/pro"
+            app:civ_border_color="#fff"
+            app:civ_border_width="3dp" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/floatingActionButton2"
+            android:layout_width="82dp"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@id/imgCamera"
+            android:layout_alignBottom="@id/imgCamera"
+            android:layout_marginEnd="132dp"
+            android:layout_marginBottom="3dp"
+            android:clickable="true"
+            android:contentDescription="@string/app_name"
+            android:focusable="true"
+            android:src="@drawable/ic_photo_camera_black_48dp" />
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginBottom="398dp"
+        android:text="@string/textV"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>

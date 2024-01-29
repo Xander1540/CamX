@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">CamX</string>
+    <string name="img">Smile!</string>
+    <string name="btnC">Camera</string>
+    <string name="imgdesc">idk</string>
+    <string name="todo">TODO</string>
+    <string name="textV">THE X COMPANY</string>
+</resources>
